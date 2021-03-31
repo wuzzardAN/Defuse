@@ -897,7 +897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6886792, g: 0.20465466, b: 0.20465466, a: 0.5529412}
+  m_Color: {r: 0.6886792, g: 0.20465466, b: 0.20465466, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -946,9 +946,8 @@ MonoBehaviour:
   - {fileID: 4240878673922708965}
   - {fileID: 4240878674272625691}
   lightOrder: 00000000000000000000000000000000
-  simonSaysPrefabs: {fileID: 0}
   simonSaysGamePanel: {fileID: 4240878673282573447}
-  lightSpeed: 0.4
+  lightSpeed: 0.25
 --- !u!1 &4240878673455442877
 GameObject:
   m_ObjectHideFlags: 0

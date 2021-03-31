@@ -12,9 +12,12 @@ public class LevelManager : MonoBehaviour
     public Text levelText;
 
     public void Start() {
+      levelCount = 1;
+      PlayerPrefs.SetInt("Levels", levelCount);
       PlayerPrefs.GetInt("Levels");
       levelCount = PlayerPrefs.GetInt("Levels");
       Level();
+
     }
 
     public void MinigameComplete() {

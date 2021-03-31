@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84565a98e74d5344198280f0eaa4293e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 10
+  rotationSpeed: 5
 --- !u!65 &7496531916841651459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MinigameGround4
       objectReference: {fileID: 0}
+    - target: {fileID: 8945797728933431416, guid: e8b047c750fbb8e4693eb59e57856bb3,
+        type: 3}
+      propertyPath: m_TagString
+      value: MinigameGround4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8b047c750fbb8e4693eb59e57856bb3, type: 3}
 --- !u!4 &4048509174171222838 stripped
@@ -151,6 +156,11 @@ PrefabInstance:
     - target: {fileID: 1153797391455927030, guid: f042e4c2e663d874ebde8456d76044ff,
         type: 3}
       propertyPath: m_Name
+      value: MinigameGround1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153797391455927030, guid: f042e4c2e663d874ebde8456d76044ff,
+        type: 3}
+      propertyPath: m_TagString
       value: MinigameGround1
       objectReference: {fileID: 0}
     - target: {fileID: 5920926791827456045, guid: f042e4c2e663d874ebde8456d76044ff,
@@ -228,6 +238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MinigameGround6
       objectReference: {fileID: 0}
+    - target: {fileID: 2613549659586437054, guid: ee4b66c28b9311a4f8de250c1a00f3a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: MinigameGround6
+      objectReference: {fileID: 0}
     - target: {fileID: 8687552344750643326, guid: ee4b66c28b9311a4f8de250c1a00f3a5,
         type: 3}
       propertyPath: m_RootOrder
@@ -301,6 +316,11 @@ PrefabInstance:
     - target: {fileID: 797285307298852948, guid: 992d8600a3186314c94369bfa4d2c930,
         type: 3}
       propertyPath: m_Name
+      value: MinigameGround3
+      objectReference: {fileID: 0}
+    - target: {fileID: 797285307298852948, guid: 992d8600a3186314c94369bfa4d2c930,
+        type: 3}
+      propertyPath: m_TagString
       value: MinigameGround3
       objectReference: {fileID: 0}
     - target: {fileID: 799148534345289464, guid: 992d8600a3186314c94369bfa4d2c930,
@@ -378,6 +398,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: MinigameGround7
       objectReference: {fileID: 0}
+    - target: {fileID: 1595881682168893025, guid: 45c8cecd9ff0ea841b5922423549549b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595881682168893025, guid: 45c8cecd9ff0ea841b5922423549549b,
+        type: 3}
+      propertyPath: m_TagString
+      value: MinigameGround7
+      objectReference: {fileID: 0}
     - target: {fileID: 5854863711665039971, guid: 45c8cecd9ff0ea841b5922423549549b,
         type: 3}
       propertyPath: m_RootOrder
@@ -433,6 +463,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.001
       objectReference: {fileID: 0}
+    - target: {fileID: 8914650991018679162, guid: 45c8cecd9ff0ea841b5922423549549b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45c8cecd9ff0ea841b5922423549549b, type: 3}
 --- !u!4 &9214401841082034671 stripped
@@ -451,6 +486,11 @@ PrefabInstance:
     - target: {fileID: 2029334076688076783, guid: 6d4726c81f614ab4b9b53dbd5ff43b1c,
         type: 3}
       propertyPath: m_Name
+      value: MinigameGround2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2029334076688076783, guid: 6d4726c81f614ab4b9b53dbd5ff43b1c,
+        type: 3}
+      propertyPath: m_TagString
       value: MinigameGround2
       objectReference: {fileID: 0}
     - target: {fileID: 7306317287404517428, guid: 6d4726c81f614ab4b9b53dbd5ff43b1c,
@@ -601,6 +641,11 @@ PrefabInstance:
     - target: {fileID: 1941207507532379017, guid: 5ac39ef3e65623e47829223d11898053,
         type: 3}
       propertyPath: m_Name
+      value: MinigameGround5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1941207507532379017, guid: 5ac39ef3e65623e47829223d11898053,
+        type: 3}
+      propertyPath: m_TagString
       value: MinigameGround5
       objectReference: {fileID: 0}
     - target: {fileID: 7089627400733671493, guid: 5ac39ef3e65623e47829223d11898053,

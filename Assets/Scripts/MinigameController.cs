@@ -16,6 +16,7 @@ public class MinigameController : MonoBehaviour
     private float range = 100f;
 
     public void Start() {
+      LayerIgnoreRay();
       startGamePanel.SetActive(true);
       Time.timeScale = 0;
     }
@@ -25,6 +26,7 @@ public class MinigameController : MonoBehaviour
         wireTaskPrefabs = GameObject.FindGameObjectWithTag("WireTask");
         startGamePanel.SetActive(false);
         Time.timeScale = 1;
+        LayerDefault();
     }
 
 
