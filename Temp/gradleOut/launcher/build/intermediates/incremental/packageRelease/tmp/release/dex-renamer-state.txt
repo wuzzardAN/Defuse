@@ -1,0 +1,4 @@
+#Wed Mar 31 23:17:58 EET 2021
+base.0=E\:\\GitHub\\Defuse\\Defuse\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
