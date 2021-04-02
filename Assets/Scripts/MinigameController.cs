@@ -18,19 +18,20 @@ public class MinigameController : MonoBehaviour
     public void Start() {
       LayerIgnoreRay();
       startGamePanel.SetActive(true);
-      Time.timeScale = 0;
     }
+    //Starting Game With Button
     public void StartGame() {
+      FindObjectOfType<LevelManager>().ChanceTimeScale();
         simonSaysPrefabs = GameObject.FindGameObjectWithTag("SimonSays");
         numFindPrefabs = GameObject.FindGameObjectWithTag("NumberFind");
         wireTaskPrefabs = GameObject.FindGameObjectWithTag("WireTask");
         startGamePanel.SetActive(false);
-        Time.timeScale = 1;
         LayerDefault();
+
     }
 
 
-
+    //Raycast hit and disable collider
     public void Update()
     {
         if(Input.GetMouseButtonDown(0)){
@@ -62,7 +63,7 @@ public class MinigameController : MonoBehaviour
             }
         }
     }
-
+    //also stupit script but its work
     public void LayerIgnoreRay() {
         numFindPrefabs.layer = 2;
         simonSaysPrefabs.layer = 2;
