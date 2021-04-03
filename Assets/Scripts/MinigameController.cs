@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MinigameController : MonoBehaviour
 {
-    public GameObject startGamePanel;
     public GameObject simonSaysPrefabs;
     public GameObject numFindPrefabs;
     public GameObject wireTaskPrefabs;
@@ -17,7 +16,6 @@ public class MinigameController : MonoBehaviour
 
     public void Start() {
       LayerIgnoreRay();
-      startGamePanel.SetActive(true);
     }
     //Starting Game With Button
     public void StartGame() {
@@ -25,7 +23,7 @@ public class MinigameController : MonoBehaviour
         simonSaysPrefabs = GameObject.FindGameObjectWithTag("SimonSays");
         numFindPrefabs = GameObject.FindGameObjectWithTag("NumberFind");
         wireTaskPrefabs = GameObject.FindGameObjectWithTag("WireTask");
-        startGamePanel.SetActive(false);
+        FindObjectOfType<UIManager>().StartGameUI();
         LayerDefault();
 
     }
