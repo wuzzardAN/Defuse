@@ -8,15 +8,18 @@ public class LevelManager : MonoBehaviour
 {
     public int levelCount = 0;
     public int minigameCount;
-    public Text levelText;
     public int minigameFull;
+    public int coin;
     public float timeRemaining;
     public bool timerIsRunning = false;
+    public Text levelText;
     public Text timeText;
     public Image progressFillImage;
 
+
+
     public void Start() {
-      PlayerPrefs.GetInt("Levels");
+      coin = PlayerPrefs.GetInt("Coin");
       levelCount = PlayerPrefs.GetInt("Levels");
       Bomb1Level();
       minigameCount = 0;
@@ -38,6 +41,8 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.Save();
         FindObjectOfType<UIManager>().NextLevelUI();
         Time.timeScale = 0;
+        coin = coin + 100;
+        PlayerPrefs.SetInt("Coin", coin);
       }
     }
     //Timer
