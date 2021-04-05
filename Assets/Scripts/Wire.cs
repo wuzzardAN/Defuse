@@ -9,53 +9,53 @@ public class Wire : MonoBehaviour,
    public bool IsLeftWire;
    public Color CustomColor;
 
-   private Image _image;
-   private LineRenderer _lineRenderer;
+   private Image image;
+   private LineRenderer lineRenderer;
 
-   private Canvas _canvas;
-   private bool _isDragStarted = false;
-   private WireTask _wireTask;
+   private Canvas canvas;
+   private bool isDragStarted = false;
+   private WireTask wireTask;
    public bool IsSuccess = false;
    private void Awake() {
-      _image = GetComponent<Image>();
-      _lineRenderer = GetComponent<LineRenderer>();
-      _canvas = GetComponentInParent<Canvas>();
-      _wireTask = GetComponentInParent<WireTask>();
+      image = GetComponent<Image>();
+      lineRenderer = GetComponent<LineRenderer>();
+      canvas = GetComponentInParent<Canvas>();
+      wireTask = GetComponentInParent<WireTask>();
    }
 
    private void Update() {
-      if (_isDragStarted) {
+      if (isDragStarted) {
          Vector2 movePos;
          RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                     _canvas.transform as RectTransform,
+                     canvas.transform as RectTransform,
                      Input.mousePosition,
-                     _canvas.worldCamera,
+                     canvas.worldCamera,
                      out movePos);
-         _lineRenderer.SetPosition(0, transform.position);
-         _lineRenderer.SetPosition(1,
-              _canvas.transform.TransformPoint(movePos));
+         lineRenderer.SetPosition(0, transform.position);
+         lineRenderer.SetPosition(1,
+              canvas.transform.TransformPoint(movePos));
       }
       else {
          // Hide the line if not dragging.
          // We will not hide it when it connects, later on.
          if (!IsSuccess) {
-            _lineRenderer.SetPosition(0, Vector3.zero);
-            _lineRenderer.SetPosition(1, Vector3.zero);
+            lineRenderer.SetPosition(0, Vector3.zero);
+            lineRenderer.SetPosition(1, Vector3.zero);
          }
       }
-      bool isHovered =    
+      bool isHovered =
         RectTransformUtility.RectangleContainsScreenPoint(
             transform as RectTransform, Input.mousePosition,
-                                    _canvas.worldCamera);
+                                    canvas.worldCamera);
       if (isHovered) {
-         _wireTask.CurrentHoveredWire = this;
+         wireTask.CurrentHoveredWire = this;
       }
    }
 
    public void SetColor(Color color) {
-      _image.color = color;
-      _lineRenderer.startColor = color;
-      _lineRenderer.endColor = color;
+      image.color = color;
+      lineRenderer.startColor = color;
+      lineRenderer.endColor = color;
       CustomColor = color;
    }
    public void OnDrag(PointerEventData eventData) {
@@ -66,22 +66,22 @@ public class Wire : MonoBehaviour,
       if (!IsLeftWire) { return; }
       // Is is successful, don't draw more lines!
       if (IsSuccess) { return; }
-      _isDragStarted = true;
-      _wireTask.CurrentDraggedWire = this;
+      isDragStarted = true;
+      wireTask.CurrentDraggedWire = this;
    }
 
    public void OnEndDrag(PointerEventData eventData) {
-      if (_wireTask.CurrentHoveredWire != null) {
-         if (_wireTask.CurrentHoveredWire.CustomColor ==
+      if (wireTask.CurrentHoveredWire != null) {
+         if (wireTask.CurrentHoveredWire.CustomColor ==
                                                 CustomColor &&
-             !_wireTask.CurrentHoveredWire.IsLeftWire) {
+             !wireTask.CurrentHoveredWire.IsLeftWire) {
             IsSuccess = true;
 
             // Set Successful on the Right Wire as well.
-            _wireTask.CurrentHoveredWire.IsSuccess = true;
+            wireTask.CurrentHoveredWire.IsSuccess = true;
          }
       }
-      _isDragStarted = false;
-      _wireTask.CurrentDraggedWire = null;
+      isDragStarted = false;
+      wireTask.CurrentDraggedWire = null;
    }
 }

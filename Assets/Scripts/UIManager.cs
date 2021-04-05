@@ -8,20 +8,18 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-      public Text coinText;
+      public Text coinText, level2UnlockText, level3UnlockText;
       public RectTransform startGame, restartLevel;
       public GameObject simonSaysPanel, wireTaskPanel, numMatchPanel, nextLevel;
-      public Button leve2, level3;
+      public int selectedLevel, coinMenu;
 
 
       public void Start() {
         coinText.text = PlayerPrefs.GetInt("Coin").ToString();
+        coinMenu = PlayerPrefs.GetInt("Coin");
       }
-      public void Bomb1() {
+      public void StartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-      }
-      public void UnlockLevel() {
-
       }
 
 
