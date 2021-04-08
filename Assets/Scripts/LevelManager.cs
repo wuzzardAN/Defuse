@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public int minigameFull;
     public int coin;
     public int bomb;
+    public int boost1, boost2;
     public float timeRemaining;
     public bool timerIsRunning = false;
     public Text levelText;
@@ -21,6 +22,8 @@ public class LevelManager : MonoBehaviour
 
 
     public void Start() {
+      boost1 = PlayerPrefs.GetInt("Boost1");
+      boost2 = PlayerPrefs.GetInt("Boost2");
       coin = PlayerPrefs.GetInt("Coin");
       levelCount = PlayerPrefs.GetInt("Levels");
       Level();
@@ -64,6 +67,29 @@ public class LevelManager : MonoBehaviour
                 FindObjectOfType<UIManager>().RestartLevelUI();
             }
         }
+    }
+
+    //Boosts
+    public void Add10Sec() {
+      if(boost1 >= 1) {
+        timeRemaining = timeRemaining + 10;
+        boost1 = boost1 - 1;
+        PlayerPrefs.SetInt("Boost1", boost1);
+      }
+
+    }
+    public void SlowTime() {
+      if(boost2 >= 1) {
+        boost2 = boost2 - 1;
+        Time.timeScale = 0.5f;
+        PlayerPrefs.SetInt("Boost2", boost2);
+      }
+
+    }
+    public void CompleteTask() {
+      FindObjectOfType<SimonSays>().ClosePanel();
+      FindObjectOfType<WireTask>().ClosePanel();
+      FindObjectOfType<NumberMatch>().ButtonOrderPanelClose();
     }
 
     void DisplayTime(float timeToDisplay){
@@ -219,6 +245,16 @@ public class LevelManager : MonoBehaviour
 
       }
       if(levelCount == 15){
+        bomb1.SetActive(true);
+        timeRemaining = 45;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow6>().wireTaskShow();
+
+      }
+      if(levelCount == 16){
         bomb1.SetActive(true);
         timeRemaining = 45;
         minigameFull = 3;

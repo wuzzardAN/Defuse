@@ -51,12 +51,12 @@ public class NumberMatch : MonoBehaviour
         }
     }
 
-    IEnumerator ButtonOrderPanelClose()
+    public IEnumerator ButtonOrderPanelClose()
     {
         FindObjectOfType<LevelManager>().MinigameComplete();
         m_text.text = "PASSED";
         m_text.color = Color.green;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         numMatchPanel.SetActive(false);
         FindObjectOfType<MinigameController>().LayerDefault();
 
