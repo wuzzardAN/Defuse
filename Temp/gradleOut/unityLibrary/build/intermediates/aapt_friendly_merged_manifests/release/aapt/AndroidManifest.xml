@@ -61,7 +61,7 @@
             android:value="portrait|landscape" />
         <meta-data
             android:name="unity.build-id"
-            android:value="c12a0a49-1d2a-4bb5-8adf-e76ac9486188" />
+            android:value="86fc3d7a-3a91-4207-ab24-acc356d4df7c" />
 
         <receiver
             android:name="com.unity.androidnotifications.UnityNotificationManager"
