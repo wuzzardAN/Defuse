@@ -106,14 +106,6 @@ public class LevelManager : MonoBehaviour
       float val = (((float) minigameFull) - ((float) minigameFull - minigameCount)) / ((float) minigameFull);
       progressFillImage.fillAmount = val;
     }
-    //UI Button Scripts
-    public void RestartLevel() {
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public void NextLevel() {
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
     //Level Design
     public void Level() {
       PlayerPrefs.GetInt("Levels");

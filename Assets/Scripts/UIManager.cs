@@ -15,15 +15,17 @@ public class UIManager : MonoBehaviour
 
 
       public void Start() {
-        coinText.text = PlayerPrefs.GetInt("Coin").ToString();
         coinMenu = PlayerPrefs.GetInt("Coin");
-        boost1value.text = PlayerPrefs.GetInt("Boost1").ToString();
+        coinText.text = PlayerPrefs.GetInt("Coin").ToString();
         boost1 = PlayerPrefs.GetInt("Boost1");
-        boost2value.text = PlayerPrefs.GetInt("Boost2").ToString();
+        boost1value.text = PlayerPrefs.GetInt("Boost1").ToString();
         boost2 = PlayerPrefs.GetInt("Boost2");
+        boost2value.text = PlayerPrefs.GetInt("Boost2").ToString();
 
+        Debug.Log(coinMenu);
 
       }
+
 
       public void StartGame() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -52,10 +54,24 @@ public class UIManager : MonoBehaviour
 
       }
 
+      public void RestartLevel() {
+        FindObjectOfType<AdManager>().Interstitial();
+      }
+
+      public void NextLevel() {
+        FindObjectOfType<AdManager>().Interstitial();
+      }
+
+      public void Claim2x() {
+        coinMenu = coinMenu + 200;
+        PlayerPrefs.SetInt("Coin", coinMenu);
+        FindObjectOfType<AdManager>().Rewarded();
+      }
 
       public void StartGameUI() {
         startGame.DOAnchorPos(new Vector2(0,-1100),0.5f);
       }
+
       public void NextLevelUI() {
         nextLevel.SetActive(true);
         simonSaysPanel.SetActive(false);
