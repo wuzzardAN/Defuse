@@ -8,17 +8,19 @@ using UnityEngine.SceneManagement;
 
 public class AdManager : MonoBehaviour
 {
+    private int rewardCoin;
     private BannerView bannerAd;
     private InterstitialAd interstitialAd;
     private RewardedAd rewardedAd;
 
-    public string appID = "";
-    public string interstitialID = "ca-app-pub-3940256099942544/1033173712";
-    public string bannerID = "	ca-app-pub-3940256099942544/6300978111";
-    public string rewardedID = "";
+    public string appID = "ca-app-pub-1838583868978866~5754097749";
+    public string interstitialID = "ca-app-pub-1838583868978866/9694160992";
+    public string bannerID = "ca-app-pub-1838583868978866/5271716164";
+    public string rewardedID = "ca-app-pub-1838583868978866/5982980848";
     public AdPosition position;
 
     public void Start() {
+      rewardCoin = PlayerPrefs.GetInt("Coin");
       MobileAds.Initialize(appID);
       Banner();
       InterstitialAD();
@@ -123,27 +125,23 @@ public class AdManager : MonoBehaviour
 
 public void HandleRewardedAdLoaded(object sender, EventArgs args)
   {
-      MonoBehaviour.print("HandleRewardedAdLoaded event received");
+      Debug.Log("Rewarded Ad Load");
   }
 
   public void HandleRewardedAdFailedToLoad(object sender, AdErrorEventArgs args)
   {
-      MonoBehaviour.print(
-          "HandleRewardedAdFailedToLoad event received with message: "
-                           + args.Message);
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
   }
 
   public void HandleRewardedAdOpening(object sender, EventArgs args)
   {
-      MonoBehaviour.print("HandleRewardedAdOpening event received");
+      Debug.Log("Rewarded Ad Open");
 
   }
 
   public void HandleRewardedAdFailedToShow(object sender, AdErrorEventArgs args)
   {
-      MonoBehaviour.print(
-          "HandleRewardedAdFailedToShow event received with message: "
-                           + args.Message);
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
   }
 
   public void HandleRewardedAdClosed(object sender, EventArgs args)
@@ -153,6 +151,8 @@ public void HandleRewardedAdLoaded(object sender, EventArgs args)
 
   public void HandleUserEarnedReward(object sender, Reward args)
   {
-
+      Debug.Log("Reward 100 Coin");
+      rewardCoin = rewardCoin + 200;
+      PlayerPrefs.SetInt("Coin", + rewardCoin);
   }
 }

@@ -7,6 +7,7 @@ public class MiniGameShow2 : MonoBehaviour
   public GameObject simonSays;
   public GameObject numFind;
   public GameObject wireTask;
+  public GameObject sliderTask;
 
 
   public void simonSaysShow() {
@@ -21,6 +22,10 @@ public class MiniGameShow2 : MonoBehaviour
 
   public void wireTaskShow() {
     wireTask.SetActive(true);
+  }
+
+  public void sliderTaskShow() {
+    sliderTask.SetActive(true);
   }
 
 }

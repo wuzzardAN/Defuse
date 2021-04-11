@@ -7,10 +7,12 @@ public class MinigameController : MonoBehaviour
     public GameObject simonSaysPrefabs;
     public GameObject numFindPrefabs;
     public GameObject wireTaskPrefabs;
+    public GameObject sliderTaskPrefabs;
 
     public GameObject simonSaysPanel;
     public GameObject numMatchPanel;
     public GameObject wireTaskPanel;
+    public GameObject sliderTaskPanel;
 
     private float range = 100f;
 
@@ -23,6 +25,7 @@ public class MinigameController : MonoBehaviour
         simonSaysPrefabs = GameObject.FindGameObjectWithTag("SimonSays");
         numFindPrefabs = GameObject.FindGameObjectWithTag("NumberFind");
         wireTaskPrefabs = GameObject.FindGameObjectWithTag("WireTask");
+        sliderTaskPrefabs = GameObject.FindGameObjectWithTag("SliderTask");
         FindObjectOfType<UIManager>().StartGameUI();
         LayerDefault();
 
@@ -56,6 +59,11 @@ public class MinigameController : MonoBehaviour
                     LayerIgnoreRay();
                     wireTaskPrefabs.GetComponent<Collider>().enabled = false;
                 }
+                if(hit.collider.tag == "SliderTask") {
+                  sliderTaskPanel.SetActive(true);
+                  LayerIgnoreRay();
+                  sliderTaskPrefabs.GetComponent<Collider>().enabled = false;
+                }
 
 
             }
@@ -66,11 +74,13 @@ public class MinigameController : MonoBehaviour
         numFindPrefabs.layer = 2;
         simonSaysPrefabs.layer = 2;
         wireTaskPrefabs.layer = 2;
+        sliderTaskPrefabs.layer = 2;
     }
     public void LayerDefault() {
         numFindPrefabs.layer = 0;
         simonSaysPrefabs.layer = 0;
         wireTaskPrefabs.layer = 0;
+        sliderTaskPrefabs.layer = 0;
     }
 
 

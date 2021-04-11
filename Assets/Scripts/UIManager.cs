@@ -31,6 +31,10 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
       }
 
+      public void Menu() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+      }
+
       public void BuyBoost1() {
         if(coinMenu >= 550 ) {
           boost1 = boost1 + 1;
@@ -63,8 +67,6 @@ public class UIManager : MonoBehaviour
       }
 
       public void Claim2x() {
-        coinMenu = coinMenu + 200;
-        PlayerPrefs.SetInt("Coin", coinMenu);
         FindObjectOfType<AdManager>().Rewarded();
       }
 
