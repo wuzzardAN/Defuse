@@ -301,6 +301,191 @@ public class LevelManager : MonoBehaviour
         FindObjectOfType<MiniGameShow5>().sliderTaskShow();
 
       }
+      if(levelCount == 21) {
+        bomb1.SetActive(true);
+        timeRemaining = 35;
+        minigameFull = 1;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow5>().wireTaskShow();
+    }
+      if(levelCount == 22){
+        bomb1.SetActive(true);
+        timeRemaining = 45;
+        minigameFull = 2;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow2>().wireTaskShow();
+        FindObjectOfType<MiniGameShow6>().simonSaysShow();
+      }
+      if(levelCount == 23){
+        bomb2.SetActive(true);
+        timeRemaining = 50;
+        minigameFull = 2;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow2>().simonSaysShow();
+        FindObjectOfType<MiniGameShow3>().numFindShow();
+      }
+      if(levelCount == 24){
+        bomb1.SetActive(true);
+        timeRemaining = 55;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow5>().wireTaskShow();
+        FindObjectOfType<MiniGameShow2>().sliderTaskShow();
+        FindObjectOfType<MiniGameShow3>().numFindShow();
+      }
+      if(levelCount == 25){
+        bomb2.SetActive(true);
+        timeRemaining = 30;
+        minigameFull = 2;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow2>().simonSaysShow();
+        FindObjectOfType<MiniGameShow4>().sliderTaskShow();
+      }
+      if(levelCount == 26){
+        bomb1.SetActive(true);
+        timeRemaining = 25;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow7>().wireTaskShow();
+        FindObjectOfType<MiniGameShow2>().numFindShow();
+        FindObjectOfType<MiniGameShow4>().sliderTaskShow();
+
+      }
+      if(levelCount == 27){
+        bomb2.SetActive(true);
+        timeRemaining = 26;
+        minigameFull = 2;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow2>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+      }
+      if(levelCount == 28){
+        bomb2.SetActive(true);
+        timeRemaining = 10;
+        minigameFull = 1;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow2>().sliderTaskShow();
+      }
+      if(levelCount == 29){
+        bomb1.SetActive(true);
+        timeRemaining = 45;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow2>().wireTaskShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow3>().simonSaysShow();
+
+      }
+      if(levelCount == 30){
+        bomb2.SetActive(true);
+        timeRemaining = 35;
+        minigameFull = 4;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow5>().wireTaskShow();
+        FindObjectOfType<MiniGameShow3>().numFindShow();
+        FindObjectOfType<MiniGameShow2>().simonSaysShow();
+        FindObjectOfType<MiniGameShow4>().sliderTaskShow();
+
+      }
+      if(levelCount == 31){
+        bomb2.SetActive(true);
+        timeRemaining = 20;
+        minigameFull = 2;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow2>().wireTaskShow();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+
+      }
+      if(levelCount == 32){
+        bomb2.SetActive(true);
+        timeRemaining = 15;
+        minigameFull = 2;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow3>().wireTaskShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+
+      }
+      if(levelCount == 33){
+        bomb1.SetActive(true);
+        timeRemaining = 20;
+        minigameFull = 2;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow3>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().sliderTaskShow();
+
+      }
+      if(levelCount == 34){
+        bomb2.SetActive(true);
+        timeRemaining = 35;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow2>().sliderTaskShow();
+
+      }
+      if(levelCount == 35){
+        bomb1.SetActive(true);
+        timeRemaining = 45;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow6>().wireTaskShow();
+
+      }
+      if(levelCount == 36){
+        bomb1.SetActive(true);
+        timeRemaining = 45;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow6>().wireTaskShow();
+
+      }
+      if(levelCount == 37){
+        bomb2.SetActive(true);
+        timeRemaining = 45;
+        minigameFull = 4;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow3>().wireTaskShow();
+        FindObjectOfType<MiniGameShow2>().sliderTaskShow();
+
+      }
+      if(levelCount == 38){
+        bomb1.SetActive(true);
+        timeRemaining = 45;
+        minigameFull = 4;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow3>().wireTaskShow();
+        FindObjectOfType<MiniGameShow2>().sliderTaskShow();
+
+      }
+      if(levelCount == 39){
+        bomb1.SetActive(true);
+        timeRemaining = 30;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow2>().sliderTaskShow();
+
+      }
+      if(levelCount == 40){
+        bomb2.SetActive(true);
+        timeRemaining = 30;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow3>().simonSaysShow();
+        FindObjectOfType<MiniGameShow4>().numFindShow();
+        FindObjectOfType<MiniGameShow5>().sliderTaskShow();
+
+      }
 
     }
 
