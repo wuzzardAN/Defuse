@@ -111,7 +111,6 @@ public class InfoMenu : MonoBehaviour
 			case 0: 
 				//first button
 				Application.OpenURL("https://www.facebook.com/Control-Games-102592701986182");
-				Debug.Log ("Facebook");
 				break;
 			case 1: 
 				//second button
@@ -123,6 +122,8 @@ public class InfoMenu : MonoBehaviour
 				break;
 		}
 	}
+
+	
 
 	void OnDestroy ()
 	{

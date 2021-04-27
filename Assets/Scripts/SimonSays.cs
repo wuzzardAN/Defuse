@@ -83,9 +83,9 @@ public class SimonSays : MonoBehaviour
 
     public void ClosePanel()
     {
-        FindObjectOfType<MinigameController>().LayerDefault();
         FindObjectOfType<LevelManager>().MinigameComplete();
         simonSaysGamePanel.SetActive(false);
+        FindObjectOfType<MinigameController>().LayerDefault();
     }
 
     public void OpenPanel()
