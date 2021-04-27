@@ -13,11 +13,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5cf53f0d-9798-6468-b451-eee070b41131}</ProjectGuid>
+    <ProjectGuid>{912f0fc4-8110-9b4e-4ae7-08c9cc14ec89}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>GoogleMobileAds</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -52,86 +52,93 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-     <Compile Include="Assets\Scripts\SliderTask.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-     <Compile Include="Assets\Scripts\InfoMenuItems.cs" />
-     <Compile Include="Assets\Scripts\Wire.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-     <Compile Include="Assets\Scripts\Minigames\MiniGameShow5.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-     <Compile Include="Assets\Scripts\NumberMatch.cs" />
-     <Compile Include="Assets\Scripts\SettingsMenu.cs" />
-     <Compile Include="Assets\Scripts\RotateObj.cs" />
-     <Compile Include="Assets\Scripts\Minigames\MiniGameShow3.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-     <Compile Include="Assets\Game1\Main.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-     <Compile Include="Assets\Scripts\UIManager.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-     <Compile Include="Assets\Scripts\InfoMenu.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-     <Compile Include="Assets\Scripts\Minigames\MiniGameShow2.cs" />
-     <Compile Include="Assets\Scripts\Boosts.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-     <Compile Include="Assets\Scripts\WireTask.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-     <Compile Include="Assets\Scripts\SettingsMenuItem.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-     <Compile Include="Assets\Scripts\Minigames\MiniGameShow7.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-     <Compile Include="Assets\Scripts\Minigames\MiniGameShow6.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-     <Compile Include="Assets\Scripts\Minigames\MiniGameShow4.cs" />
-     <Compile Include="Assets\Scripts\MinigameController.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-     <Compile Include="Assets\Scripts\SimonSays.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-     <Compile Include="Assets\Scripts\AdManager.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-     <Compile Include="Assets\Scripts\LevelManager.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\NativeAdType.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\DisplayMetrics.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RequestConfigurationClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IRewardedInterstitialAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IRewardedAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\AdLoaderClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\InitializationStatusDummyClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdapterStatus.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\GoogleMobileAdsClientFactory.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\InterstitialClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InitializationStatusClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Mediation\MediationExtras.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\DummyClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\MobileAds.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\Reward.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\MobileAdsClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\RewardingAdBaseClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\Utils.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeTemplateAd.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IInterstitialClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\ResponseInfoDummyClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\BannerClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IResponseInfoClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\MobileAdsEventExecutor.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\RewardedAd.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\ResponseInfoClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Utils.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\DummyAdBehaviour.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\RequestConfiguration.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\AdLoaderClientArgs.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\BannerClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IAdLoaderClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdValueEventArgs.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InterstitialClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IInitializationStatusClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\ServerSideVerificationOptions.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\ResponseInfoClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\CustomNativeClientEventArgs.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MobileAdsClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\RewardedInterstitialAd.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdPosition.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\InitializationStatusClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\CustomNativeTemplateClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdSize.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\BannerClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\BannerView.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\RewardBasedVideoAd.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RequestConfigurationClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\RewardedAdDummyClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\AdLoader.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\InterstitialClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Utils.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\TagForUnderAgeOfConsent.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\CustomNativeTemplateClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\InterstitialAd.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\ResponseInfo.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Externs.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdRequest.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IRewardBasedVideoAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardedAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdValue.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IBannerClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdErrorEventArgs.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeEventArgs.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\MaxAdContentRating.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\Gender.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardedInterstitialAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\TagForChildDirectedTreatment.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IMobileAdsClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\AdLoaderClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\Countdown.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\BaseAdDummyClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardedAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\InitializationStatus.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\IClientFactory.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\ButtonBehaviour.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\RewardedInterstitialAdDummyClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\RewardedInterstitialAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Api\Core\AdFailedToLoadEventArgs.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardedInterstitialAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Platforms\Unity\RewardedAdClient.cs" />
+     <Compile Include="Assets\GoogleMobileAds\Common\ICustomNativeTemplateClient.cs" />
+     <None Include="Assets\GoogleMobileAds\GoogleMobileAds.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Unity/2020.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -345,8 +352,38 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>D:/Unity/2020.2.0f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>D:/Unity/2020.2.0f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>D:/Unity/2020.2.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>D:/Unity/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl_v1.2.164">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/PackageCache/com.google.external-dependency-manager@1.2.164/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/PackageCache/com.google.external-dependency-manager@1.2.164/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
  <Reference Include="DOTween">
  <HintPath>E:/GitHub/Defuse/Defuse/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver_v1.2.164">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/PackageCache/com.google.external-dependency-manager@1.2.164/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver_v1.2.164">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/PackageCache/com.google.external-dependency-manager@1.2.164/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/PackageCache/com.unity.render-pipelines.core@10.2.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.PackageManagerResolver_v1.2.164">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/PackageCache/com.google.external-dependency-manager@1.2.164/ExternalDependencyManager/Editor/Google.PackageManagerResolver_v1.2.164.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>E:/GitHub/Defuse/Defuse/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>D:/Unity/2020.2.0f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -693,98 +730,14 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>D:/Unity/2020.2.0f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
- <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Notifications">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Notifications.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Searcher.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Notifications.iOS">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Notifications.iOS.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Notifications.Android">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Notifications.Android.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{09a084b9-5fa0-9346-989d-6198759fca31}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{912f0fc4-8110-9b4e-4ae7-08c9cc14ec89}</Project>
-      <Name>GoogleMobileAds</Name>
-    </ProjectReference>
-    <ProjectReference Include="GoogleMobileAds.Editor.csproj">
-      <Project>{e23c7720-e171-ef9b-445b-6ad8d120dee6}</Project>
-      <Name>GoogleMobileAds.Editor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

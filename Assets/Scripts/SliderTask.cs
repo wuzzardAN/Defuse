@@ -49,8 +49,8 @@ public class SliderTask : MonoBehaviour
 
     public IEnumerator PanelClose() {
       yield return new WaitForSeconds(0.8f);
-      sliderTask.SetActive(false);
       FindObjectOfType<MinigameController>().LayerDefault();
+      sliderTask.SetActive(false);
       FindObjectOfType<LevelManager>().MinigameComplete();
 
     }

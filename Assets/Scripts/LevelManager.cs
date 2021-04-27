@@ -281,6 +281,26 @@ public class LevelManager : MonoBehaviour
         FindObjectOfType<MiniGameShow2>().sliderTaskShow();
 
       }
+      if(levelCount == 19){
+        bomb1.SetActive(true);
+        timeRemaining = 30;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow4>().simonSaysShow();
+        FindObjectOfType<MiniGameShow5>().numFindShow();
+        FindObjectOfType<MiniGameShow2>().sliderTaskShow();
+
+      }
+      if(levelCount == 20){
+        bomb2.SetActive(true);
+        timeRemaining = 30;
+        minigameFull = 3;
+        levelText.text = "Level " + levelCount.ToString();
+        FindObjectOfType<MiniGameShow3>().simonSaysShow();
+        FindObjectOfType<MiniGameShow4>().numFindShow();
+        FindObjectOfType<MiniGameShow5>().sliderTaskShow();
+
+      }
 
     }
 

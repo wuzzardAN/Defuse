@@ -15,17 +15,15 @@ public class MinigameController : MonoBehaviour
     public GameObject sliderTaskPanel;
 
     private float range = 100f;
-
-    public void Start() {
-      LayerIgnoreRay();
-    }
+    
     //Starting Game With Button
-    public void StartGame() {
-      FindObjectOfType<LevelManager>().ChanceTimeScale();
+    public void StartGame() 
+    {
+        FindObjectOfType<LevelManager>().ChanceTimeScale();
+        sliderTaskPrefabs = GameObject.FindGameObjectWithTag("SliderTask");
         simonSaysPrefabs = GameObject.FindGameObjectWithTag("SimonSays");
         numFindPrefabs = GameObject.FindGameObjectWithTag("NumberFind");
         wireTaskPrefabs = GameObject.FindGameObjectWithTag("WireTask");
-        sliderTaskPrefabs = GameObject.FindGameObjectWithTag("SliderTask");
         FindObjectOfType<UIManager>().StartGameUI();
         LayerDefault();
 
@@ -45,24 +43,27 @@ public class MinigameController : MonoBehaviour
             {
                 if (hit.collider.tag == "SimonSays")
                 {
-                    simonSaysPanel.SetActive(true);
                     simonSaysPrefabs.GetComponent<Collider>().enabled = false;
+                    simonSaysPanel.SetActive(true);
                     LayerIgnoreRay();
                 }
-                if (hit.collider.tag == "NumberFind") {
-                    numMatchPanel.SetActive(true);
+                if (hit.collider.tag == "NumberFind") 
+                {
                     LayerIgnoreRay();
+                    numMatchPanel.SetActive(true);
                     numFindPrefabs.GetComponent<Collider>().enabled = false;
                 }
-                if (hit.collider.tag == "WireTask") {
-                    wireTaskPanel.SetActive(true);
+                if (hit.collider.tag == "WireTask") 
+                {
                     LayerIgnoreRay();
+                    wireTaskPanel.SetActive(true);
                     wireTaskPrefabs.GetComponent<Collider>().enabled = false;
                 }
-                if(hit.collider.tag == "SliderTask") {
-                  sliderTaskPanel.SetActive(true);
-                  LayerIgnoreRay();
-                  sliderTaskPrefabs.GetComponent<Collider>().enabled = false;
+                if(hit.collider.tag == "SliderTask") 
+                {
+                    LayerIgnoreRay();
+                    sliderTaskPanel.SetActive(true);
+                    sliderTaskPrefabs.GetComponent<Collider>().enabled = false;
                 }
 
 
@@ -70,17 +71,19 @@ public class MinigameController : MonoBehaviour
         }
     }
     //also stupit script but its work
-    public void LayerIgnoreRay() {
+    public void LayerIgnoreRay()
+    {
+        sliderTaskPrefabs.layer = 2;
         numFindPrefabs.layer = 2;
         simonSaysPrefabs.layer = 2;
         wireTaskPrefabs.layer = 2;
-        sliderTaskPrefabs.layer = 2;
     }
-    public void LayerDefault() {
+    public void LayerDefault() 
+    {
+        sliderTaskPrefabs.layer = 0;
         numFindPrefabs.layer = 0;
         simonSaysPrefabs.layer = 0;
         wireTaskPrefabs.layer = 0;
-        sliderTaskPrefabs.layer = 0;
     }
 
 

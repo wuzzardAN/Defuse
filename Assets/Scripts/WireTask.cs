@@ -55,8 +55,8 @@ public class WireTask : MonoBehaviour {
 
    public void ClosePanel() {
      FindObjectOfType<LevelManager>().MinigameComplete();
-     wireTaskPanel.SetActive(false);
      FindObjectOfType<MinigameController>().LayerDefault();
+     wireTaskPanel.SetActive(false);
 
    }
 

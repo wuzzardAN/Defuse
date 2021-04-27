@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class RotateObj : MonoBehaviour
 {
-    [SerializeField] float rotationSpeed = 10f;
+    [SerializeField] float rotationSpeed = 100f;
     bool dragging = false;
+    private Rigidbody rb;
+
+    void Awake()
+    {
+      rb = GetComponent<Rigidbody>();
+    }
 
     void OnMouseDrag() {
       dragging = true;
@@ -19,11 +25,11 @@ public class RotateObj : MonoBehaviour
 
     void FixedUpdate() {
       if(dragging) {
-        float x = Input.GetAxis ("Mouse X") * rotationSpeed * Mathf.Deg2Rad;
-        float y = Input.GetAxis ("Mouse Y") * rotationSpeed * Mathf.Deg2Rad;
+        float x = Input.GetAxis ("Mouse X") * rotationSpeed * Time.fixedDeltaTime;
+        float y = Input.GetAxis ("Mouse Y") * rotationSpeed * Time.fixedDeltaTime;
 
-        transform.RotateAround(Vector3.down, x);
-        transform.RotateAround(Vector3.right, y);
+        rb.AddTorque(Vector3.down * x);
+        rb.AddTorque(Vector3.right * y);
       }
     }
 
