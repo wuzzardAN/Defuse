@@ -700,6 +700,15 @@
  <Reference Include="Unity.RenderPipelines.Core.Editor">
  <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Recorder.Editor">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Recorder.Base">
+ <HintPath>E:/GitHub/Defuse/Defuse/Library/ScriptAssemblies/Unity.Recorder.Base.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GoogleMobileAds.csproj">
